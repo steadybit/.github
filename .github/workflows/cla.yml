@@ -19,8 +19,8 @@ jobs:
           PERSONAL_ACCESS_TOKEN : ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           path-to-signatures: '.github/cla/signatures.json'
-          path-to-document: 'https://github.com/steadybit/.github/blob/main/cla/individual-cla.md' # e.g. a CLA or a DCO document
-          custom-notsigned-prcomment: '<br/><br/>Thank you for your submission - we really appreciate it ❤️. We kindly ask that $you sign a [Contributor License Agreement](https://github.com/steadybit/.github/blob/main/cla/individual-cla.md) before we can accept your contribution.<br/><br/>You can sign the CLA by just posting a Pull Request Comment, the same as the text below.<br/><br/>If you are contributing on behalf of a company, your company should contact us to sign a [Corporate Contributor License Agreement](https://github.com/steadybit/.github/blob/main/cla/corporate-cla.md), via hello@steadybit.com.'
+          path-to-document: 'https://github.com/steadybit/.github/blob/main/.github/cla/individual-cla.md' # e.g. a CLA or a DCO document
+          custom-notsigned-prcomment: '<br/><br/>Thank you for your submission - we really appreciate it ❤️. We kindly ask that $you sign a [Contributor License Agreement](https://github.com/steadybit/.github/blob/main/.github/cla/individual-cla.md) before we can accept your contribution.<br/><br/>You can sign the CLA by just posting a Pull Request Comment, the same as the text below.<br/><br/>If you are contributing on behalf of a company, your company should contact us to sign a [Corporate Contributor License Agreement](https://github.com/steadybit/.github/blob/main/.github/cla/corporate-cla.md), via hello@steadybit.com.'
           remote-repository-name: .github
           # branch should not be protected
           branch: 'main'
