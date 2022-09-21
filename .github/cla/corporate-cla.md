@@ -1,6 +1,6 @@
 Steadybit GmbH
 
-Corporate Contributor License Agreement, Version 1.0 
+# Corporate Contributor License Agreement, Version 1.0 
 
 In order to clarify the intellectual property license granted with Contributions (as defined below) from any person or entity, Steadybit GmbH (“Steadybit”) must have a Contributor License Agreement ("CLA" or “Agreement”) on file that has been signed by each Contributor (as defined below), indicating agreement to the license terms below. This license is for the protection of Contributors as well as the protection of Steadybit and its users; it does not change the Contributor’s rights to use Contributions for any other purpose. This version of the CLA allows an entity (the "Company") to submit Contributions to Steadybit, to authorize Contributions submitted by its designated employees to Steadybit, and to grant Steadybit copyright and patent licenses to such Contributions.
 
