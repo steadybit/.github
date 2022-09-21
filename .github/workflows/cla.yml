@@ -2,7 +2,7 @@ name: "CLA Assistant"
 on:
   workflow_call:
     secrets:
-      PERSONAL_ACCESS_TOKEN:
+      PERSONAL_ACCESS_TOKEN_USED_BY_CLA_FROM_ANSGAR:
         description: "Personal access token with repo scope"
         required: true
 jobs:
