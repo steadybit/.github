@@ -1,7 +1,10 @@
 name: "CLA Assistant"
 on:
   workflow_call:
-
+    secrets:
+      PERSONAL_ACCESS_TOKEN:
+        description: "Personal access token with repo scope"
+        required: true
 jobs:
   CLAssistant:
     runs-on: ubuntu-latest
