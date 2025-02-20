@@ -24,6 +24,6 @@ You are not expected to provide support for Your Contributions, except to the ex
 
 Should You wish to submit work that is not Your original creation, You may submit it to Steadybit separately from any Contribution, identifying the complete details of its source and of any license or other restriction (including, but not limited to, related patents, trademarks, and license agreements) of which you are personally aware, and conspicuously marking the work as “Submitted on behalf of a third-party: [named here]”.
 
-You agree to notify Steadybit of any facts or circumstances of which you become aware that would make these representations inaccurate in any respect.
+You agree to notify Steadybit at office@steadybit.com of any facts or circumstances of which you become aware that would make these representations inaccurate in any respect.
 
 This Agreement shall be subject to the laws of the Federal Republic of Germany. This Agreement sets forth the entire understanding and agreement between the parties, and supersedes any previous communications, representations or agreements, whether oral or written, regarding the subject matter herein.

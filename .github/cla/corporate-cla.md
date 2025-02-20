@@ -26,6 +26,6 @@ Should Company wish to submit work that is not Company’s original creation, Co
 
 Company agrees to notify Steadybit at office@steadybit.com of any facts or circumstances of which it becomes aware that would make these representations inaccurate in any respect.
 
-This Agreement is governed by the laws of the State of California, without regard to its choice of law provisions, and by the laws of the United States. This Agreement sets forth the entire understanding and agreement between the parties, and supersedes any previous communications, representations or agreements, whether oral or written, regarding the subject matter herein.
+TThis Agreement shall be subject to the laws of the Federal Republic of Germany. This Agreement sets forth the entire understanding and agreement between the parties, and supersedes any previous communications, representations or agreements, whether oral or written, regarding the subject matter herein.
 
 By clicking on the “I have read and agree to the entire Corporate Contributor License Agreement”, the person executing this CLA on behalf of Company represents that she/he has the authority to sign on behalf of, and bind Company to, the terms and conditions of this CLA.
