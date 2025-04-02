@@ -1,10 +1,10 @@
 Steadybit GmbH
 
-# Corporate Contributor License Agreement, Version 1.0 
+# Corporate Contributor License Agreement, Version 1.1 
 
 In order to clarify the intellectual property license granted with Contributions (as defined below) from any person or entity, Steadybit GmbH (“Steadybit”) must have a Contributor License Agreement ("CLA" or “Agreement”) on file that has been signed by each Contributor (as defined below), indicating agreement to the license terms below. This license is for the protection of Contributors as well as the protection of Steadybit and its users; it does not change the Contributor’s rights to use Contributions for any other purpose. This version of the CLA allows an entity (the "Company") to submit Contributions to Steadybit, to authorize Contributions submitted by its designated employees to Steadybit, and to grant Steadybit copyright and patent licenses to such Contributions.
 
-To agree to this Corporate CLA, please read this document carefully, complete and submit. Be sure to keep a copy for your records.
+To agree to this Corporate CLA, please read this document carefully, sign and submit. Be sure to keep a copy for your records.
 
 In consideration of the opportunity to participate in the community of contributors to Steadybit projects, Company accepts and agrees to the following terms and conditions for Company’s present and future Contributions submitted to Steadybit. Except for the license granted herein to Steadybit and recipients of software distributed by Steadybit, Company reserves all right, title, and interest in and to Company’s Contributions.
 
@@ -26,6 +26,8 @@ Should Company wish to submit work that is not Company’s original creation, Co
 
 Company agrees to notify Steadybit at office@steadybit.com of any facts or circumstances of which it becomes aware that would make these representations inaccurate in any respect.
 
-TThis Agreement shall be subject to the laws of the Federal Republic of Germany. This Agreement sets forth the entire understanding and agreement between the parties, and supersedes any previous communications, representations or agreements, whether oral or written, regarding the subject matter herein.
+This Agreement shall be subject to the laws of the Federal Republic of Germany. This Agreement sets forth the entire understanding and agreement between the parties, and supersedes any previous communications, representations or agreements, whether oral or written, regarding the subject matter herein.
 
-By clicking on the “I have read and agree to the entire Corporate Contributor License Agreement”, the person executing this CLA on behalf of Company represents that she/he has the authority to sign on behalf of, and bind Company to, the terms and conditions of this CLA.
+By signing this Agreement, the signatory represents that she/he has the authority to sign on behalf of, and bind Company to, the terms and conditions of this CLA.
+
+Appendix 1: List of Company's designated employees (full name and email address)
