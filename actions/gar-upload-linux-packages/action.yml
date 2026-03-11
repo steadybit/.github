@@ -1,0 +1,96 @@
+name: "Upload Linux Packages to Google Artifact Registry"
+description: "Authenticates to GCP and uploads .deb and .rpm packages to Google Artifact Registry"
+
+inputs:
+  workload_identity_provider:
+    description: "GCP Workload Identity Federation provider"
+    required: true
+  service_account:
+    description: "GCP service account email"
+    required: true
+  project_id:
+    description: "GCP project ID"
+    required: true
+  location:
+    description: "GCP Artifact Registry location"
+    required: true
+  deb_repository:
+    description: "Name of the APT repository for .deb packages"
+    required: false
+    default: ""
+  yum_repository:
+    description: "Name of the YUM repository for .rpm packages"
+    required: false
+    default: ""
+  packages_dir:
+    description: "Directory containing the .deb and .rpm packages to upload"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Google Auth
+      id: auth
+      uses: google-github-actions/auth@v3
+      with:
+        token_format: "access_token"
+        project_id: ${{ inputs.project_id }}
+        service_account: ${{ inputs.service_account }}
+        workload_identity_provider: ${{ inputs.workload_identity_provider }}
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v3
+
+    - name: Upload .deb packages
+      if: inputs.deb_repository != ''
+      shell: bash
+      working-directory: ${{ inputs.packages_dir }}
+      env:
+        DEB_REPOSITORY: ${{ inputs.deb_repository }}
+        LOCATION: ${{ inputs.location }}
+      run: |
+        shopt -s nullglob
+        debs=($(find . -name '*.deb'))
+        if [ ${#debs[@]} -eq 0 ]; then
+          echo "No .deb packages found"
+          exit 0
+        fi
+        for deb in "${debs[@]}"; do
+          echo "Uploading $deb to $DEB_REPOSITORY..."
+          ERROR=$(gcloud artifacts apt upload "$DEB_REPOSITORY" --location="$LOCATION" --source="$deb" 2>&1) || {
+            echo "$ERROR"
+            if echo "$ERROR" | grep -q 'updated packages must bear a new version'; then
+              echo "Package already uploaded. Continuing..."
+            else
+              echo "Package upload failed."
+              exit 1
+            fi
+          }
+        done
+
+    - name: Upload .rpm packages
+      if: inputs.yum_repository != ''
+      shell: bash
+      working-directory: ${{ inputs.packages_dir }}
+      env:
+        YUM_REPOSITORY: ${{ inputs.yum_repository }}
+        LOCATION: ${{ inputs.location }}
+      run: |
+        shopt -s nullglob
+        rpms=($(find . -name '*.rpm'))
+        if [ ${#rpms[@]} -eq 0 ]; then
+          echo "No .rpm packages found"
+          exit 0
+        fi
+        for rpm in "${rpms[@]}"; do
+          echo "Uploading $rpm to $YUM_REPOSITORY..."
+          ERROR=$(gcloud artifacts yum upload "$YUM_REPOSITORY" --location="$LOCATION" --source="$rpm" 2>&1) || {
+            echo "$ERROR"
+            if echo "$ERROR" | grep -q 'updated packages must bear a new version'; then
+              echo "Package already uploaded. Continuing..."
+            else
+              echo "Package upload failed."
+              exit 1
+            fi
+          }
+        done
