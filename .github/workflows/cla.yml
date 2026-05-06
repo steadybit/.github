@@ -27,7 +27,7 @@ jobs:
           # team-o: TheNavigat,daniejtoja,guillermolopezmartin-okta,shepbook,junajiffle
           # team-s: jay-hankins,knuta,joeyb,kpalati,singhshivani1
           # team-r: tomh-rbx, peter-welander
-          allowlist: 'joshiste,bertschneider,ReuDa,MrBW,ManuelGerding,guendaaa,TheNavigat,daniejtoja,guillermolopezmartin-okta,shepbook,junajiffle,jay-hankins,knuta,joeyb,kpalati,singhshivani1,tomh-rbx,peter-welander,dependabot[bot],greenkeeper[bot]'
+          allowlist: 'Zha0ze,joshiste,bertschneider,ReuDa,MrBW,ManuelGerding,guendaaa,TheNavigat,daniejtoja,guillermolopezmartin-okta,shepbook,junajiffle,jay-hankins,knuta,joeyb,kpalati,singhshivani1,tomh-rbx,peter-welander,dependabot[bot],greenkeeper[bot]'
           signed-commit-message: '$contributorName has signed the CLA in $owner/$repo#$pullRequestNo'
 
           #below are the optional inputs - If the optional inputs are not given, then default values will be taken
